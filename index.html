@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>NEXO</title>
+
+    <link rel="stylesheet"
+    href="styles.css">
+</head>
+
+<body>
+
+    <div class="particles"></div>
+
+    <header>
+
+        <div class="logo">
+            NEXO
+        </div>
+
+        <nav>
+            <a href="#inicio">
+                Inicio
+            </a>
+
+            <a href="#funciona">
+                Cómo funciona
+            </a>
+
+            <a href="#comunidad">
+                Comunidad
+            </a>
+
+            <a href="#contacto">
+                Contacto
+            </a>
+        </nav>
+
+        <div class="header-buttons">
+
+            <button
+            class="login-btn"
+            onclick="openLogin()">
+
+                Iniciar sesión
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <section
+    class="hero"
+    id="inicio">
+
+        <div class="badge">
+            Encuentra nuevas amistades
+        </div>
+
+        <h1>
+            Conecta con personas
+            del Liceo con
+            <span>NEXO</span>
+        </h1>
+
+        <p>
+            Encuentra estudiantes con
+            gustos similares, haz nuevas
+            amistades y crea conexiones
+            reales dentro del Liceo.
+        </p>
+
+        <div class="buttons">
+
+            <button
+            class="primary"
+            onclick="openRegister()">
+
+                Crear perfil
+
+            </button>
+
+            <button
+            class="secondary"
+
+            onclick="document
+            .getElementById(
+            'comunidad')
+            .scrollIntoView({
+            behavior:'smooth'})">
+
+                Explorar amigos
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <section
+    class="features"
+    id="funciona">
+
+        <h2>
+            ¿Cómo funciona NEXO?
+        </h2>
+
+        <div class="feature-boxes">
+
+            <div class="feature-card">
+
+                <h3>
+                    1. Crea tu perfil
+                </h3>
+
+                <p>
+                    Agrega tus gustos,
+                    intereses musicales
+                    y cuéntanos de ti.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>
+                    2. Encuentra personas
+                </h3>
+
+                <p>
+                    Descubre estudiantes
+                    con cosas en común.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>
+                    3. Haz amistades
+                </h3>
+
+                <p>
+                    Conecta y empieza
+                    nuevos matches.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section
+    class="community"
+    id="comunidad">
+
+        <h2>
+            Comunidad NEXO
+        </h2>
+
+        <p>
+            Miles de estudiantes
+            conectándose dentro
+            del Liceo.
+        </p>
+
+        <div class="community-cards">
+
+            <div class="user-card">
+
+                <img
+                src="Cris.png"
+                class="avatar-img"
+                alt="Cristobal">
+
+                <h3>
+                    Cristobal
+                </h3>
+
+                <p>
+                    Fútbol
+                </p>
+
+            </div>
+
+            <div class="user-card">
+
+                <img
+                src="Captura de pantalla 2026-06-11 205521.png"
+                class="avatar-img"
+                alt="Bastian">
+
+                <h3>
+                    Bastian
+                </h3>
+
+                <p>
+                    Gaming
+                </p>
+
+            </div>
+
+            <div class="user-card">
+
+                <img
+                src="Vicente.png"
+                class="avatar-img"
+                alt="Vicente">
+
+                <h3>
+                    Vicente
+                </h3>
+
+                <p>
+                    Deportes
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section
+    class="contact"
+    id="contacto">
+
+        <h2>
+            Contáctanos
+        </h2>
+
+        <form>
+
+            <input
+            type="text"
+            placeholder="Tu nombre">
+
+            <input
+            type="email"
+            placeholder="Tu correo">
+
+            <textarea
+            placeholder="Tu mensaje">
+            </textarea>
+
+            <button
+            type="submit">
+
+                Enviar
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        ©️ 2025 NEXO -
+        Todos los derechos
+        reservados
+
+    </footer>
+
+    <div
+    class="modal"
+    id="loginModal">
+
+        <div
+        class="modal-content">
+
+            <span
+            class="close"
+            onclick="closeLogin()">
+
+                ×
+
+            </span>
+
+            <h2>
+                Iniciar sesión
+            </h2>
+
+            <input
+            type="email"
+            placeholder="Correo">
+
+            <input
+            type="password"
+            placeholder="Contraseña">
+
+            <button>
+                Entrar
+            </button>
+
+        </div>
+
+    </div>
+
+    <div
+    class="modal"
+    id="registerModal">
+
+        <div
+        class="modal-content">
+
+            <span
+            class="close"
+            onclick="closeRegister()">
+
+                ×
+
+            </span>
+
+            <h2>
+                Crear una cuenta
+            </h2>
+
+            <input
+            type="text"
+            placeholder="Nombre">
+
+            <input
+            type="email"
+            placeholder="Correo">
+
+            <input
+            type="password"
+            placeholder="Contraseña">
+
+            <button>
+                Registrarme
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
